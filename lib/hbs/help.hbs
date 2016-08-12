@@ -1,0 +1,8 @@
+{{#each commands}}
+*{{@key}}*: {{this.label}}
+{{#if this.description}}
+{{this.description}}
+Example: _{{this.example}}_
+{{/if}}
+===========================
+{{/each}}
