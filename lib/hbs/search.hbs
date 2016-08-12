@@ -2,6 +2,8 @@
 *Albums:*
 {{#each response.albums.items}}
 {{@index}}: {{this.name}}
+{{else}}
+*Nothing found*
 {{/each}}
 {{/if}}
 {{#if response.artists}}
@@ -9,6 +11,8 @@
 *Artists:*
 {{#each response.artists.items}}
 {{@index}}: {{this.name}}
+{{else}}
+*Nothing found*
 {{/each}}
 {{/if}}
 {{#if response.tracks}}
@@ -16,6 +20,8 @@
 *Tracks:*
 {{#each response.tracks.items}}
 {{@index}}: {{this.name}}
+{{else}}
+*Nothing found*
 {{/each}}
 {{/if}}
 {{#if response.playlists}}
@@ -23,5 +29,7 @@
 *Playlists:*
 {{#each response.playlists.items}}
 {{@index}}: {{this.name}}
+{{else}}
+*Nothing found*
 {{/each}}
 {{/if}}
