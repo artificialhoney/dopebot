@@ -1,0 +1,5 @@
+{{#each tracks}}
+*{{this.name}}* by *{{this.artists.0.name}}* from *{{this.album.name}}*
+{{else}}
+*Tracklist empty*
+{{/each}}
