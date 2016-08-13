@@ -15,76 +15,40 @@ Slack bot which connects with Mopidy and Spotify.
 Please see `bin\dopebot --help`:
 
 ```
-Usage: dopebot [options]
+  Usage: dopebot [options]
 
-Options:
+  Options:
 
--h, --help           output usage information
--V, --version        output the version number
--t, --token [token]  Set [token] for the Slack API
--m, --mopidy [url]   Set [url] for the Mopidy API
--d, --dialog         Only respond to [@dopebot]
--l, --limit [limit]  Set [limit] for Spotify API result lists
--v, --verbose        Increase verbosity
+    -h, --help           output usage information
+    -V, --version        output the version number
+    -t, --token [token]  Set [token] for the Slack API
+    -m, --mopidy [url]   Set [url] for the Mopidy API
+    -d, --dialog         Only respond to <@dopebot>
+    -e, --emoji [emoji]  Dopebot emoji icon in Slack
+    -l, --limit [limit]  Set [limit] for Spotify API result lists
+    -v, --verbose        Increase verbosity
 ```
 
 For general Slack integration information please refer to the official Slack documentation.
 In the channel where you have added dopebot try: `@dopebot help` to list all commands:
 
-
-**search [types...] [query]**: Search Spotify
-
-[types] can contain "album, artist, playlist or track"
-
-Example: _search album,track Beatles_
-___
-**play [type] [index]**: Play Spotify-URI from search
-
-This commands refers to the run search before
-
-Example: _play album 5_
-___
-**queue [type] [index]**: Enqueue Spotify-URI from search
-
-This commands refers to the run search before
-
-Example: _queue album 5_
-___
-**play [spotify_uri]**: Play Spotify-URI
-
-[spotify_uri] can be obtained from a Spotify client app
-
-Example: _play [spotify_uri]_
-___
-
-**queue [spotify_uri]**: Enqueue Spotify-URI
-
-[spotify_uri] can be obtained from a Spotify client app
-
-Example: _queue [spotify_uri]_
-___
-**current**: Get current track from Mopidy
-___
-**tracks**: Get current tracklist from Mopidy
-___
-**next**: Play next track from tracklist
-___
-**previous**: Play previous track from tracklist
-___
-**pause**: Pause current track
-___
-**resume**: Resume current track
-___
-**stop***: Stop playback
-___
-**volume [0-100]**: Get/Set Volume
-
-Without volume percentage, the volume is read from Mopidy
-
-Example: _volume 55_
-___
-**state**: Get playback state
-___
+`search (album|artist|playlist|track)?(.*)`: Searches Spotify for the given query
+`play (album|artist|playlist|track) (\d+)`: Plays a Spotify resource from the last search
+`queue (album|artist|playlist|track) (\d+)`: Enqueues a Spotify resource from the last search
+`play <(spotify:[\w:]+[a-zA-Z0-9]{22})>`: Plays a Spotify URI
+`queue <(spotify:[\w:]+[a-zA-Z0-9]{22})>`: Enqueues a Spotify URI
+`current`: Prints out the current track
+`tracks`: Prints out the current tracklist
+`next`: Plays the next track from the tracklist
+`prev`: Plays the previous track from the tracklist
+`pause`: Pauses the current tracks
+`resume`: Resumes the current tracks
+`stop`: Stops playback
+`play`: Plays current tracklist
+`state`: Gets the current playback state
+`vol`: Gets the volume
+`vol (\d{1,3})`: Sets the volume
+`help`: Prints out this message
 
 ## Contributors
 
