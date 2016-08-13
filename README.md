@@ -33,21 +33,37 @@ For general Slack integration information please refer to the official Slack doc
 In the channel where you have added dopebot try: `@dopebot help` to list all commands:
 
 `search (album|artist|playlist|track)?(.*)`: Searches Spotify for the given query
+
 `play (album|artist|playlist|track) (\d+)`: Plays a Spotify resource from the last search
+
 `queue (album|artist|playlist|track) (\d+)`: Enqueues a Spotify resource from the last search
+
 `play <(spotify:[\w:]+[a-zA-Z0-9]{22})>`: Plays a Spotify URI
+
 `queue <(spotify:[\w:]+[a-zA-Z0-9]{22})>`: Enqueues a Spotify URI
+
 `current`: Prints out the current track
+
 `tracks`: Prints out the current tracklist
+
 `next`: Plays the next track from the tracklist
+
 `prev`: Plays the previous track from the tracklist
+
 `pause`: Pauses the current tracks
+
 `resume`: Resumes the current tracks
+
 `stop`: Stops playback
+
 `play`: Plays current tracklist
+
 `state`: Gets the current playback state
+
 `vol`: Gets the volume
+
 `vol (\d{1,3})`: Sets the volume
+
 `help`: Prints out this message
 
 ## Contributors
