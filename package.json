@@ -27,6 +27,7 @@
   "dependencies": {
     "commander": "^2.9.0",
     "handlebars": "^4.0.5",
+    "html-entities": "^1.2.0",
     "mopidy": "^0.5.0",
     "pattern-emitter": "^1.0.0",
     "slackbots": "^0.5.2",
