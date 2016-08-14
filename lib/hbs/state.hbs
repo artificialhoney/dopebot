@@ -1,2 +1,8 @@
 >>>
-State: *{{ state }}*
+State: *{{state.state}}*
+{{#if state.tlTrack}}
+Track: *{{state.tlTrack.track.name}}* by *<{{state.tlTrack.track.artists.0.uri}}|{{state.tlTrack.track.artists.0.name}}>* from *<{{state.tlTrack.track.album.uri}}|{{state.tlTrack.track.album.name}}>*
+{{else}}
+*No current track*
+{{/if}}
+Volume: *{{state.volume}}*

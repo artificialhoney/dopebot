@@ -38,13 +38,13 @@ In the channel where you have added dopebot try: `@dopebot help` to list all com
 
 `queue (album|artist|playlist|track) (\d+)`: Enqueues a Spotify resource from the last search
 
-`play <(spotify:[\w:]+[a-zA-Z0-9]{22})>`: Plays a Spotify URI
+`play (spotify:[\w:]+[a-zA-Z0-9]{22})`: Plays a Spotify URI
 
-`queue <(spotify:[\w:]+[a-zA-Z0-9]{22})>`: Enqueues a Spotify URI
-
-`current`: Prints out the current track
+`queue (spotify:[\w:]+[a-zA-Z0-9]{22})`: Enqueues a Spotify URI
 
 `tracks`: Prints out the current tracklist
+
+`clear`: Clears the tracklist
 
 `next`: Plays the next track from the tracklist
 
@@ -58,11 +58,11 @@ In the channel where you have added dopebot try: `@dopebot help` to list all com
 
 `play`: Plays current tracklist
 
-`state`: Gets the current playback state
-
 `vol`: Gets the volume
 
 `vol (\d{1,3})`: Sets the volume
+
+`state`: Gets the current playback state
 
 `help`: Prints out this message
 
