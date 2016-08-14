@@ -1,8 +1,7 @@
 >>>
-State: *{{state.state}}*
+State: *{{state.state}}* | Volume: *{{state.volume}}* | Consume: *{{state.consume}}* | Random: *{{state.random}}* | Repeat: *{{state.repeat}}* | Single: *{{state.single}}*
 {{#if state.tlTrack}}
 Track: *{{state.tlTrack.track.name}}* by *<{{state.tlTrack.track.artists.0.uri}}|{{state.tlTrack.track.artists.0.name}}>* from *<{{state.tlTrack.track.album.uri}}|{{state.tlTrack.track.album.name}}>*
 {{else}}
 *No current track*
 {{/if}}
-Volume: *{{state.volume}}*

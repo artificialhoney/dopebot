@@ -58,6 +58,10 @@ In the channel where you have added dopebot try: `@dopebot help` to list all com
 
 `play`: Plays current tracklist
 
+`mode (consume|random|repeat|single)`: Gets a specific mode enabled state
+
+`mode (consume|random|repeat|single) (true|false)`: Sets the consume mode enabled state
+
 `vol`: Gets the volume
 
 `vol (\d{1,3})`: Sets the volume
