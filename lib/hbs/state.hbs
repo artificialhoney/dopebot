@@ -1,6 +1,6 @@
 >>>
 {{#if state.tlTrack}}
-Track: *{{state.tlTrack.track.name}}* by *<{{state.tlTrack.track.artists.0.uri}}|{{state.tlTrack.track.artists.0.name}}>* from *<{{state.tlTrack.track.album.uri}}|{{state.tlTrack.track.album.name}}>*
+Track: *<{{state.tlTrack.track.uri}}|{{state.tlTrack.track.name}}>* by *<{{state.tlTrack.track.artists.0.uri}}|{{state.tlTrack.track.artists.0.name}}>* from *<{{state.tlTrack.track.album.uri}}|{{state.tlTrack.track.album.name}}>*
 {{else}}
 *No current track*
 {{/if}}
