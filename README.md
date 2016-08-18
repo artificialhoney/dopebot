@@ -42,11 +42,11 @@ In the channel where you have added dopebot try: `@dopebot help` to list all com
 
 `queue (spotify:[\w:]+[a-zA-Z0-9]{22})`: Enqueues a Spotify URI
 
-`tracks`: Prints out the current tracklist
+`(tracks|list)`: Prints out the current tracklist
 
-`clear`: Clears the tracklist
+`(clear|clean)`: Clears the tracklist
 
-`next`: Plays the next track from the tracklist
+`(next|skip)`: Plays the next track from the tracklist
 
 `prev`: Plays the previous track from the tracklist
 
@@ -60,11 +60,13 @@ In the channel where you have added dopebot try: `@dopebot help` to list all com
 
 `mode (consume|random|repeat|single)`: Gets a specific mode enabled state
 
-`mode (consume|random|repeat|single) (true|false)`: Sets the consume mode enabled state
+`mode (consume|random|repeat|single) (true|false)`: Sets a specific mode enabled state
 
-`vol`: Gets the volume
+`(vol|volume)`: Gets the volume
 
-`vol (\d{1,3})`: Sets the volume
+`(vol|volume) (\d{1,3})`: Sets the volume
+
+`(vol|volume) (up|down)`: Increases / Decreases the volume
 
 `state`: Gets the current playback state
 
