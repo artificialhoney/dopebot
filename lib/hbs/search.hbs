@@ -2,7 +2,7 @@
 {{#if response.albums}}
 *Albums:*
 {{#each response.albums.items}}
-{{@index}}: *<{{this.uri}}|{{this.name}}>*
+{{this.hit}}: *<{{this.uri}}|{{this.name}}>*
 {{else}}
 *Nothing found*
 {{/each}}
@@ -11,7 +11,7 @@
 
 *Artists:*
 {{#each response.artists.items}}
-{{@index}}: *<{{this.uri}}|{{this.name}}>*
+{{this.hit}: *<{{this.uri}}|{{this.name}}>*
 {{else}}
 *Nothing found*
 {{/each}}
@@ -20,7 +20,7 @@
 
 *Tracks:*
 {{#each response.tracks.items}}
-{{@index}}: *<{{this.uri}}|{{this.name}}>* by *<{{this.artists.0.uri}}|{{this.artists.0.name}}>* from *<{{this.album.uri}}|{{this.album.name}}>*
+{{this.hit}}: *<{{this.uri}}|{{this.name}}>* by *<{{this.artists.0.uri}}|{{this.artists.0.name}}>* from *<{{this.album.uri}}|{{this.album.name}}>*
 {{else}}
 *Nothing found*
 {{/each}}
@@ -29,7 +29,7 @@
 
 *Playlists:*
 {{#each response.playlists.items}}
-{{@index}}: *<{{this.uri}}|{{this.name}}>* by *<{{this.owner.uri}}|{{this.owner.id}}>*
+{{this.hit}}: *<{{this.uri}}|{{this.name}}>* by *<{{this.owner.uri}}|{{this.owner.id}}>*
 {{else}}
 *Nothing found*
 {{/each}}
