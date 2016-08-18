@@ -1,6 +1,6 @@
 >>>
 {{#each tlTracks}}
-Track {{this.index}}: *<{{this.track.uri}}|{{this.track.name}}>* by *<{{this.track.artists.0.uri}}|{{this.track.artists.0.name}}>* from *<{{this.track.album.uri}}|{{this.track.album.name}}>*
+Track {{this.index}}: *<{{this.track.uri}}|{{this.track.name}}>* by *<{{this.track.artists.0.uri}}|{{this.track.artists.0.name}}>* from *<{{this.track.album.uri}}|{{this.track.album.name}}>*{{#if this.history}} | Initiator: *{{ this.history.user }}* {{ this.history.timestamp }}{{/if}}
 {{else}}
 *Tracklist empty*
 {{/each}}
