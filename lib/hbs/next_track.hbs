@@ -1,7 +1,7 @@
 >>>
 _In the current playback mode only the next track can be announced!_
 {{#if track}}
-Next Track: *<{{track.uri}}|{{track.name}}>* by *<{{track.artists.0.uri}}|{{track.artists.0.name}}>* from *<{{track.album.uri}}|{{track.album.name}}>*{{#if history}} | Initiator: *{{ history.user }}* {{ history.timestamp }}{{/if}}
+Next Track: *<{{track.uri}}|{{track.name}}>* by *<{{track.artists.0.uri}}|{{track.artists.0.name}}>* from *<{{track.album.uri}}|{{track.album.name}}>*{{#if history}} | Initiator: *{{ history.user.name }}* {{ history.timestamp }}{{/if}}
 {{else}}
 *No next track*
 {{/if}}

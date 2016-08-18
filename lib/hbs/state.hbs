@@ -6,5 +6,5 @@ Track: *<{{state.tlTrack.track.uri}}|{{state.tlTrack.track.name}}>* by *<{{state
 {{/if}}
 State: *{{state.state}}* | Volume: *{{state.volume}}* | Consume: *{{state.consume}}* | Random: *{{state.random}}* | Repeat: *{{state.repeat}}* | Single: *{{state.single}}*
 {{#if state.history}}
-Initiator: *{{ state.history.user }}* {{ state.history.timestamp }}
+Initiator: *{{ state.history.user.name }}* {{ state.history.timestamp }}
 {{/if}}
