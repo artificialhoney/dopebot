@@ -24,6 +24,8 @@ Please see `bin\dopebot --help`:
     -t, --token [token]  Set [token] for the Slack API
     -m, --mopidy [url]   Set [url] for the Mopidy API
     -d, --dialog         Only respond to <@dopebot>
+    -h, --history        Keep user commands in memory
+    -u, --unfurl         Unfold Spotify URIs in Slack
     -e, --emoji [emoji]  Dopebot emoji icon in Slack
     -l, --limit [limit]  Set [limit] for Spotify API result lists
     -v, --verbose        Increase verbosity
