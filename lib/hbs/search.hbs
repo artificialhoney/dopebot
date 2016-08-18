@@ -1,6 +1,6 @@
 >>>
 {{#if albums}}
-*{{albums.items.length}} of {{albums.total}} Albums:*
+*Albums:* {{albums.items.length}} of {{albums.total}}
 {{#each albums.items}}
 {{this.hit}}: *<{{this.uri}}|{{this.name}}>*
 {{else}}
@@ -9,7 +9,7 @@
 {{/if}}
 {{#if artists}}
 
-*{{artists.items.length}} of {{artists.total}} Artists:*
+*Artists:* {{artists.items.length}} of {{artists.total}}
 {{#each artists.items}}
 {{this.hit}}: *<{{this.uri}}|{{this.name}}>*
 {{else}}
@@ -18,7 +18,7 @@
 {{/if}}
 {{#if tracks}}
 
-*{{tracks.items.length}} of {{tracks.total}} Tracks:*
+*Tracks:* {{tracks.items.length}} of {{tracks.total}}
 {{#each tracks.items}}
 {{this.hit}}: *<{{this.uri}}|{{this.name}}>* by *<{{this.artists.0.uri}}|{{this.artists.0.name}}>* from *<{{this.album.uri}}|{{this.album.name}}>*
 {{else}}
@@ -27,7 +27,7 @@
 {{/if}}
 {{#if playlists}}
 
-*{{playlists.items.length}} of {{playlists.total}} Playlists:*
+*Playlists:* {{playlists.items.length}} of {{playlists.total}}
 {{#each playlists.items}}
 {{this.hit}}: *<{{this.uri}}|{{this.name}}>* by *<{{this.owner.uri}}|{{this.owner.id}}>*
 {{else}}
