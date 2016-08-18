@@ -1,34 +1,34 @@
 >>>
-{{#if response.albums}}
+{{#if albums}}
 *Albums:*
-{{#each response.albums.items}}
+{{#each albums.items}}
 {{this.hit}}: *<{{this.uri}}|{{this.name}}>*
 {{else}}
 *Nothing found*
 {{/each}}
 {{/if}}
-{{#if response.artists}}
+{{#if artists}}
 
 *Artists:*
-{{#each response.artists.items}}
-{{this.hit}: *<{{this.uri}}|{{this.name}}>*
+{{#each artists.items}}
+{{this.hit}}: *<{{this.uri}}|{{this.name}}>*
 {{else}}
 *Nothing found*
 {{/each}}
 {{/if}}
-{{#if response.tracks}}
+{{#if tracks}}
 
 *Tracks:*
-{{#each response.tracks.items}}
+{{#each tracks.items}}
 {{this.hit}}: *<{{this.uri}}|{{this.name}}>* by *<{{this.artists.0.uri}}|{{this.artists.0.name}}>* from *<{{this.album.uri}}|{{this.album.name}}>*
 {{else}}
 *Nothing found*
 {{/each}}
 {{/if}}
-{{#if response.playlists}}
+{{#if playlists}}
 
 *Playlists:*
-{{#each response.playlists.items}}
+{{#each playlists.items}}
 {{this.hit}}: *<{{this.uri}}|{{this.name}}>* by *<{{this.owner.uri}}|{{this.owner.id}}>*
 {{else}}
 *Nothing found*
