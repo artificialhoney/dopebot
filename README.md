@@ -36,9 +36,9 @@ In the channel where you have added dopebot try: `@dopebot help` to list all com
 
 `search (album|artist|playlist|track)?(.*)`: Searches Spotify for the given query
 
-`play (album|artist|playlist|track) (\d+)`: Plays a Spotify resource from the last search
+`play (\d+)`: Plays a Spotify resource from the last search
 
-`queue (album|artist|playlist|track) (\d+)`: Enqueues a Spotify resource from the last search
+`queue (\d+)`: Enqueues a Spotify resource from the last search
 
 `play (spotify:[\w:]+[a-zA-Z0-9]{22})`: Plays a Spotify URI
 
