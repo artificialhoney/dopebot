@@ -64,6 +64,8 @@ In the channel where you have added dopebot try: `@dopebot help` to list all com
 
 `mode (consume|random|repeat|single) (true|false)`: Sets a specific mode enabled state
 
+`shuffle`: Shuffles current tracklist
+
 `(vol|volume)`: Gets the volume
 
 `(vol|volume) (\d{1,3})`: Sets the volume
