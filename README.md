@@ -4,15 +4,13 @@ Slack bot which connects with Mopidy and Spotify.
 
 ## Installation
 
-1. `git clone git@github.com:100hz/dopebot.git`
-2. `cd dopebot && npm install`
-
+1. `npm install dopebot`
 
 ## Usage
 
 `bin/dopebot --token="[YOUR_SLACK_TOKEN]" --mopidy="ws://192.168.36.140:6680/mopidy/ws"`
 
-Please see `bin\dopebot --help`:
+Please see `dopebot --help`:
 
 ```
   Usage: dopebot [options]
@@ -32,49 +30,7 @@ Please see `bin\dopebot --help`:
 ```
 
 For general Slack integration information please refer to the official Slack documentation.
-In the channel where you have added dopebot try: `@dopebot help` to list all commands:
-
-`search (album|artist|playlist|track)?(.*)`: Searches Spotify for the given query
-
-`play (\d+)`: Plays a Spotify resource from the last search
-
-`queue (\d+)`: Enqueues a Spotify resource from the last search
-
-`play (spotify:[\w:]+[a-zA-Z0-9]{22})`: Plays a Spotify URI
-
-`queue (spotify:[\w:]+[a-zA-Z0-9]{22})`: Enqueues a Spotify URI
-
-`(tracks|list)`: Prints out the current tracklist
-
-`(clear|clean)`: Clears the tracklist
-
-`(next|skip)`: Plays the next track from the tracklist
-
-`prev`: Plays the previous track from the tracklist
-
-`pause`: Pauses the current tracks
-
-`resume`: Resumes the current tracks
-
-`stop`: Stops playback
-
-`play`: Plays current tracklist
-
-`mode (consume|random|repeat|single)`: Gets a specific mode enabled state
-
-`mode (consume|random|repeat|single) (true|false)`: Sets a specific mode enabled state
-
-`shuffle`: Shuffles current tracklist
-
-`(vol|volume)`: Gets the volume
-
-`(vol|volume) (\d{1,3})`: Sets the volume
-
-`(vol|volume) (up|down)`: Increases / Decreases the volume
-
-`state`: Gets the current playback state
-
-`help`: Prints out this message
+In the channel where you have added dopebot try: `@dopebot help` to list all commands.
 
 ## Contributors
 
