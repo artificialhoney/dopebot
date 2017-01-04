@@ -2,7 +2,8 @@
 {{#if albums}}
 *Albums:* {{albums.items.length}} of {{albums.total}}
 {{#each albums.items}}
-{{this.hit}}: *<{{this.uri}}|{{this.name}}>* by *<{{this.artists.0.uri}}|{{this.artists.0.name}}>*
+{{this.hit}}: *<{{this.uri}}|{{this.name}}>* by *<{{this.artists.0.uri}}|{{this.artists.0.name}}>* on 
+*{{this.release_date}}*
 {{else}}
 *Nothing found*
 {{/each}}
