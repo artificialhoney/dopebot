@@ -4,11 +4,11 @@ Slack bot which connects with Mopidy and Spotify.
 
 ## Installation
 
-1. `npm install dopebot`
+1. `npm install dopebot -g`
 
 ## Usage
 
-`bin/dopebot --token="[YOUR_SLACK_TOKEN]" --mopidy="ws://192.168.36.140:6680/mopidy/ws"`
+`dopebot --token="[YOUR_SLACK_TOKEN]" --mopidy="ws://192.168.36.140:6680/mopidy/ws"`
 
 Please see `dopebot --help`:
 
