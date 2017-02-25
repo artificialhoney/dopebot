@@ -32,22 +32,12 @@ Options:
 ```
 
 For general Slack integration information please refer to the official Slack documentation.
-In the channel where you have added dopebot try: `@dopebot help` to list all commands.
+In the channel where you have added dopebot try: `help` to list all commands.
 
 ## Contributors
 
 - [Ernesto Baschny](http://cron.eu)
 - [Sebastian Krüger](http://theblackestbox.net)
-
-### Want to contribute?
-
-Welcome! Glad, to hear. It's easy. Just follow theses steps:
-
-1. Fork the project & branch
-2. Code and document your stuff
-3. Create a Pull Request with description
-
-## License
 
 ## License
 
