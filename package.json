@@ -2,7 +2,9 @@
   "name": "dopebot",
   "version": "0.2.4",
   "description": "Slack bot which connects with Mopidy and Spotify",
-  "main": "bin/dopebot",
+  "bin": {
+    "dopebot": "bin/dopebot.js"
+  },
   "scripts": {
     "standard": "standard",
     "test": "echo \"Error: no test specified\" && exit 1"
