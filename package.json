@@ -31,7 +31,7 @@
     "@slack/client": "^3.8.1",
     "html-entities": "^1.2.0",
     "mopidy": "^0.5.0",
-    "spotify-web-api-node": "^2.3.6",
+    "spotify-web-api-node": "^2.4.0",
     "winston": "^2.3.1",
     "yargs": "^6.6.0"
   },
