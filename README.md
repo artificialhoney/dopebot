@@ -8,7 +8,8 @@ Slack bot which connects with Mopidy and Spotify.
 
 ## Usage
 
-`dopebot --token "<SLACK_TOKEN>" --channel "<SLACK_CHANNEL>" --mopidy "<MOPIDY_URL>" --brain`
+
+`dopebot --token "<SLACK_TOKEN>" --channel "<SLACK_CHANNEL>" --id "<SPOTIFY_CLIENT_ID>" --secret "<SPOTIFY_CLIENT_SECRET>" --mopidy "<MOPIDY_URL>" --brain`
 
 Please see `dopebot --help`:
 
@@ -19,6 +20,10 @@ Options:
   --token, -t       Set token for the Slack API              [string] [required]
   --channel, -c     Set the Slack channel name to listen for input
                                                              [string] [required]
+
+  --id              Spotify client ID token                  [string] [required]
+  --secret          Spotify client secret token              [string] [required]
+
   --mopidy, -m, -m  Set the WS-URL of Mopidy
                              [string] [default: "ws://localhost:6680/mopidy/ws"]
   --dialog, -d      Only respond to <@dopebot>        [boolean] [default: false]
