@@ -34,8 +34,10 @@ Options:
   --help, -h        Show help                                          [boolean]
 ```
 
-For general Slack integration information please refer to the official Slack documentation.
+For general Slack integration information please refer to the official Slack [documentation](https://api.slack.com/custom-integrations/legacy-tokens).
+
 In the channel where you have added dopebot try: `help` to list all commands.
+
 For Spotify search integration please create an [app](https://developer.spotify.com/my-applications/) to generate client and secret. 
 
 ## Contributors
