@@ -1,6 +1,6 @@
 {
   "name": "dopebot",
-  "version": "0.3.4",
+  "version": "1.0.0",
   "description": "Slack bot which connects with Mopidy and Spotify",
   "bin": {
     "dopebot": "bin/dopebot.js"
