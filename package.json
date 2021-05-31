@@ -28,14 +28,14 @@
   },
   "homepage": "https://github.com/100hz/dopebot#readme",
   "dependencies": {
-    "@slack/client": "^5.0.0",
-    "html-entities": "^1.2.1",
-    "mopidy": "^1.0.1",
+    "@slack/client": "^5.0.2",
+    "html-entities": "^1.4.0",
+    "mopidy": "^1.3.0",
     "spotify-web-api-node": "^4.0.0",
-    "winston": "^3.2.1",
-    "yargs": "^13.2.2"
+    "winston": "^3.3.3",
+    "yargs": "^13.3.2"
   },
   "devDependencies": {
-    "standard": "*"
+    "standard": "^16.0.3"
   }
 }
